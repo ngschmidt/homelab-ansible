@@ -2,9 +2,13 @@
 all: 
   children: 
     centos: 
-      hosts: "minemeld.lab.engyak.net nms.lab.engyak.net"
+      hosts: 
+        minemeld.lab.engyak.net
+        nms.lab.engyak.net
     opensuse-mgmt: 
-      hosts: "ansible.lab.engyak.net ns.lab.engyak.net"
+      hosts: 
+        ansible.lab.engyak.net
+        ns.lab.engyak.net
     opensuse-pyl:
       hosts: "w0.lab.engyak.net"
   hosts: localhost
