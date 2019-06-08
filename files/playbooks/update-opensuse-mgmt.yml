@@ -4,5 +4,4 @@
     - name: run zypper update...
       zypper:
         name: '*'
-        state: dist-upgrade
-        extra_args: '--no-allow-vendor-change --allow-arch-change'
+        state: latest
