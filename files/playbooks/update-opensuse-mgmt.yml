@@ -1,9 +1,6 @@
 ---
 - hosts: opensuse-mgmt
   tasks:
-    - name: run zypper refresh...
-      zypper: 
-        update_cache: yes
     - name: run zypper update...
       zypper:
         name: '*'
