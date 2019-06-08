@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  tasks:
+    - name: update git data...
+      git:
+        repo: 'https://github.com/ngschmidt/homelab-ansible.git'
+        dest: /src/ansible-playbooks
