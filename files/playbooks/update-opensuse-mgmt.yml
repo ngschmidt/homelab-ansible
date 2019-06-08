@@ -1,5 +1,5 @@
 ---
-- hosts: opensuse-mgmt
+- hosts: opensusemgmt
   tasks:
     - name: run zypper update...
       zypper:
