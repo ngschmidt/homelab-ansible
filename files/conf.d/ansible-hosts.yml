@@ -1,0 +1,8 @@
+--- 
+all: 
+  children: 
+    centos: 
+      hosts: "minemeld.lab.engyak.net nms.lab.engyak.net"
+    opensuse: 
+      hosts: "ansible.lab.engyak.net w0.lab.engyak.net ns.lab.engyak.net"
+  hosts: localhost
