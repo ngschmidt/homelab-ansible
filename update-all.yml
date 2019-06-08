@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+    - name: update ansible configs...
+      import_playbook: '/src/ansible-playbooks/files/playbooks/update-git.yml'
+    - name: update opensuse nodes...
+      import_playbook: '/src/ansible-playbooks/files/playbooks/update-opensuse-mgmt.yml'
