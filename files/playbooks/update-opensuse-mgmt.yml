@@ -5,3 +5,7 @@
       zypper:
         name: '*'
         state: latest
+    - name: verify packages are installed...
+      zypper:
+        name: python-xml
+        state: present
