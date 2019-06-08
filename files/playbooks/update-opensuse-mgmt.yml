@@ -1,10 +1,11 @@
 ---
 - hosts: opensusemgmt
   tasks:
-    - name: run zypper update...
+    - name: update opensuse mgmt vms...
       zypper:
         name: '*'
-        state: latest
+        state: dist-upgrade
+        extra_args: '--no-allow-vendor-change --allow-arch-change'
     - name: verify packages are installed...
       zypper:
         name: python-xml
