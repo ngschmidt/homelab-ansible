@@ -10,5 +10,5 @@
       zypper:
         name: python-xml
         state: present
-    - name: reboot opensuse mgmt vms...
+    - name: reboot self!
       reboot:
